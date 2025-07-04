@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative mt-4 w-full h-screen items-center flex flex-col overflow-hidden">
+      <body className="relative mt-4 w-full h-screen items-center flex flex-col">
         <Header/>
         {children}
       </body>

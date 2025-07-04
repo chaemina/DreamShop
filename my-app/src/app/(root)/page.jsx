@@ -6,7 +6,7 @@
 
 export default function Main() {
   return (
-    <div className="">
+    <div className="w-full h-full">
       <HomeTemplate />
     </div>
   );
