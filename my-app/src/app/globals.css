@@ -16,7 +16,7 @@
   --breakpoint-*: initial;
   --breakpoint-tablet: 40rem;
   --breakpoint-laptop: 64rem;
-  --breakpoint-desktop: 80rem;
+  --breakpoint-desktop: 87rem;
   --color-newGrey: oklch(95.1% 0.005 94.76 / 100%);
   --color-textBrown: oklch(34.2% 0.039 33.6 / 80%)
 }
