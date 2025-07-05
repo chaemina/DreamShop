@@ -1,6 +1,8 @@
 import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "../../shared/layout/Header";
+import { Suspense } from 'react';
+import GlobalSpinner from "../../shared/ui/Spinner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="relative mt-4 w-full h-screen items-center flex flex-col">
         <Header/>
-        {children}
+        <Suspense fallback={<GlobalSpinner />}>
+                {children}
+        </Suspense>
       </body>
     </html>
   );

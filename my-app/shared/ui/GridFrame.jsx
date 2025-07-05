@@ -1,9 +1,9 @@
 import React from "react";
 
 const GridFrame = ({ columns = { mobile: 1, laptop: 2, desktop: 3 }, children }) => {
-  const mobileCols = columns.mobile || 1;
-  const laptopCols = columns.laptop || mobileCols;
-  const desktopCols = columns.desktop || laptopCols;
+  const mobileCols = columns.mobile;
+  const laptopCols = columns.laptop;
+  const desktopCols = columns.desktop;
 
   const classNames = [
     `grid`,

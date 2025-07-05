@@ -1,20 +1,21 @@
 "use client";
 
 import React from "react";
-import { useToggle } from "../model/useToggle";
 import { useRouter } from "next/navigation";
+import { useToggle } from "../model/useToggle";
 import { motion, LayoutGroup } from "framer-motion";
-import Button from "../../../shared/ui/Button";
+import Button from "../../../shared/ui/Button"; 
 
 const items = [
   { label: "Home", path: "/" },
-  { label: "Our Album", path: "/" },
+  { label: "Our Album", path: "/" }, 
   { label: "CoKoMong", path: "/intro" },
-  { label: "Contact us", path: "/" },
+  { label: "Contact us", path: "/" }, 
 ];
 
 const ToggleGroup = () => {
-  const { activeIndex, toggle } = useToggle(items.length);
+
+  const { activeIndex, toggle } = useToggle(items);
   const router = useRouter();
 
   const handleClick = (index) => {
