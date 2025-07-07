@@ -3,10 +3,12 @@ import React from "react";
 const IntroStartSection = () => {
   return (
     <div className="flex flex-col mt-10 justify-center items-center gap-10">
+       <object type="image/svg+xml" data="/images/poster.svg" className="w-full mb-2 block h-auto">
          <img
           src="/images/poster.svg"
           alt="IntroImage"
           className="w-[50%] laptop:w-[30%] desktop:w-[20%]" />
+          </object>
       <img
         src="/images/IntroImage.svg"
         alt="introImage"
