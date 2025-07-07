@@ -40,13 +40,14 @@ const IntroMember = () => {
         {members.map((member, index) => (
           <div
             key={index}
-            className="p-6 flex flex-col items-center justify-center p-4"
+            className="flex flex-col items-center justify-center latop:p-6"
           >
+            <object type="image/svg+xml" data={member.image} className="w-full mb-2">
             <img
               src={member.image}
               alt={member.name}
-              className=" mb-2"
             />
+            </object>
             
             <div className="flex flex-col gap-2 w-full">
             <div className="flex items-center gap-2 text-sm text-gray-700">

@@ -8,8 +8,8 @@ import Button from "../../../shared/ui/Button";
 
 const items = [
   { label: "Home", path: "/" },
-  { label: "Our Album", path: "/" }, 
   { label: "CoKoMong", path: "/intro" },
+  { label: "Our Album", path: "/" }, 
 ];
 
 const ToggleGroup = () => {

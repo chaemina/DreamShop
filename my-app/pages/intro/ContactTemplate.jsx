@@ -5,28 +5,28 @@ const ContactPage = () => {
 
 
 const SNS = [
-  { name: "insta", image: "/images/instagram.svg", link: "https://www.instagram.com/cokomong2025/" },
+  { name: "insta", image: "/images/insta.svg", link: "https://www.instagram.com/cokomong2025/" },
   { name: "youtube", image: "/images/youtube.svg", link: "https://www.youtube.com/@wfk-cokomong/" },
 ];
 
   return (
-    <div className="flex flex-col w-full justify-center items-center mt-10 ">
+    <div className="flex flex-col w-full justify-center items-center mt-20 ">
          <img
               src="/images/sns.svg"
               alt="sns"
-              className=" mb-2"
+              className="mb-2"
             />
       <GridFrame columns={{ mobile: 2, laptop: 2, desktop: 2 }}>
         {SNS.map((item, index) => (
           <div
             key={index}
-            className="p-6 flex flex-col items-center justify-center p-4"
+            className="p-6 flex flex-col justify-center w-full items-center justify-center p-4"
           >
-          <Link href={item.link}>
+          <Link className="items-center justify-center flex" href={item.link}>
             <img
               src={item.image}
               alt={item.name}
-              className=" mb-2"
+              className="w-[5rem]  mb-2"
             />
             </Link>
           </div>

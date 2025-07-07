@@ -18,9 +18,9 @@ const IntroPage = () => {
                <div className="w-full h-full flex justify-center items-center">
                 <IntroMember/>
                </div>
-           </FadeInSection>
+           <ContactPage/>
+        </FadeInSection>
         </div>
-        <ContactPage/>
     </div>
   );
 };
