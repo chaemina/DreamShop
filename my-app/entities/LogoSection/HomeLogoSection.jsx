@@ -8,7 +8,7 @@ const HomeLogoSection = () => {
         alt="mainLogo"
         className="w-[80%] laptop:w-full "
       />
-      <div className="text-xs laptop:text-lg text-textBrown text-center">
+      <div className="text-xs tablet:text-lg text-textBrown text-center">
         WFK ICT X CoKoMong X Hangai University
       </div>
     </div>

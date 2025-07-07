@@ -5,7 +5,7 @@ const ScrollToListButton = ({ onClick }) => {
   return (
     <Button
       onClick={onClick}
-      className="text-xs laptop:text-sm bg-textBrown shadow hover:bg-stone-400"
+      className="text-xs tablet:text-sm bg-textBrown shadow hover:bg-stone-400"
     >
      Go to the Ger Shop
     </Button>
