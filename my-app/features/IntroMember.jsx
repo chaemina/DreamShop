@@ -14,7 +14,7 @@ const IntroMember = () => {
   
   return (
     
-    <div className="p-4 bg-white">
+    <div className="p-4 ">
       <GridFrame columns={{ mobile: 1, laptop: 2, desktop: 2 }}>
         {members.map((member, index) => (
           <div

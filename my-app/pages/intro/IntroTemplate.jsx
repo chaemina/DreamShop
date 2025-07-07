@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import FadeInSection from "../../widgets/FadeInSection/FadeInSection";
 import IntroStartSection from "../../entities/LogoSection/IntroStartSection";
 import IntroMember from "../../features/IntroMember";
+import ContactPage from "./ContactTemplate";
 
 const IntroPage = () => {
   const listRef = useRef(null);
@@ -19,6 +20,7 @@ const IntroPage = () => {
                </div>
            </FadeInSection>
         </div>
+        <ContactPage/>
     </div>
   );
 };

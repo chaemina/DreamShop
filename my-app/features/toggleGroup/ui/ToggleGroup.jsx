@@ -10,7 +10,6 @@ const items = [
   { label: "Home", path: "/" },
   { label: "Our Album", path: "/" }, 
   { label: "CoKoMong", path: "/intro" },
-  { label: "Contact us", path: "/" }, 
 ];
 
 const ToggleGroup = () => {
