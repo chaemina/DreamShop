@@ -8,7 +8,7 @@ import ContactPage from "./ContactTemplate";
 const IntroPage = () => {
   const listRef = useRef(null);
   return (
-    <div className="flex flex-col w-full justify-center items-center gap-20">
+    <div className="flex flex-col w-full justify-center items-center tablet:gap-10">
         <div className="w-full flex flex-col items-center justify-center">
           <IntroStartSection />
          </div>

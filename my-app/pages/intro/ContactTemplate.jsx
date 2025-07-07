@@ -26,7 +26,7 @@ const SNS = [
             <img
               src={item.image}
               alt={item.name}
-              className="w-[5rem]  mb-2"
+              className="w-[5rem] desktop:w-[10rem]  mb-2"
             />
             </Link>
           </div>
