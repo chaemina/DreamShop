@@ -19,6 +19,8 @@ const IntroStartSection = () => {
         web programming, graghic design, and Korean cultural classes for students at Hangai University
         in Mongolia. Our team, name “CoKoMong” stands for Korea and Mongolia connected through Coding.
         </p>
+        <br/>
+        <p> For any inquiries or suggestions, please contact the team leader via email or Instagram direct message. </p>
       </div>
     </div>
   );
