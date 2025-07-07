@@ -42,7 +42,7 @@ const IntroMember = () => {
             key={index}
             className="flex flex-col items-center justify-center latop:p-6"
           >
-            <object type="image/svg+xml" data={member.image} className="w-full mb-2 block h-[347px]">
+            <object type="image/svg+xml" data={member.image} className="w-full mb-2">
             <img
               src={member.image}
               alt={member.name}
