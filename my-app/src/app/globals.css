@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+   --font-inter: 'Inter', sans-serif;
 }
 
 @theme inline {
@@ -18,7 +19,8 @@
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 87rem;
   --color-newGrey: oklch(95.1% 0.005 94.76 / 100%);
-  --color-textBrown: oklch(34.2% 0.039 33.6 / 80%)
+  --color-textBrown: oklch(34.2% 0.039 33.6 / 80%);
+  --color-darkGrey: oklch(36.31% 0.009 269.4/ 90%);
 }
 
 /* 다크 모드 */
@@ -29,11 +31,6 @@
   }
 }
 
-/* body {
-  background-image: linear-gradient(to right, #D6ECF7 5%, #FEDFCF 95%);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
 body {
 
   background-image: url("/images/bg.svg");
@@ -41,5 +38,5 @@ body {
   background-size: cover;
   background-position: center;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter),Arial;
 }

@@ -1,11 +1,13 @@
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../../shared/layout/Header";
+import Footer from "../../shared/layout/Footer";
 import { Suspense } from 'react';
 import GlobalSpinner from "../../shared/ui/Spinner";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -17,11 +19,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative mt-4 w-full h-screen items-center flex flex-col">
+      <body className={`${inter.variable} flex flex-col items-center w-full h-screen mt-4 relative`}>
         <Header/>
+        <main className="flex-grow mb-10">
         <Suspense fallback={<GlobalSpinner />}>
                 {children}
         </Suspense>
+        </main>
+        <Footer/>
       </body>
     </html>
   );

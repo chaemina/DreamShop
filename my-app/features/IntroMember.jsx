@@ -4,11 +4,32 @@ import React from "react";
 import GridFrame from "../shared/ui/GridFrame";
 
 const members = [
-  { name: "Chae Min A", image: "/images/mina.svg" },
-  { name: "Kim Hee Jeong", image: "/images/hee.svg" },
-  { name: "Park Jae Yong", image: "/images/jae.svg" },
-  { name: "Jeong Seon Hyeong", image: "/images/seon.svg" },
+  {
+    name: "Chae Min A",
+    image: "/images/mina.svg",
+    email: "chaemina82@naver.com",
+    instagram: "___chaemina"
+  },
+  {
+    name: "Kim Hee Jeong",
+    image: "/images/hee.svg",
+    email: "khjmangu135@naver.com",
+    instagram: "llolxw"
+  },
+  {
+    name: "Park Jae Yong",
+    image: "/images/jae.svg",
+    email: "wodyddl09166@naver.com",
+    instagram: "zeddy.zip_"
+  },
+  {
+    name: "Jeong Seon Hyeong",
+    image: "/images/seon.svg",
+    email: "linears317@gmail.com",
+    instagram: "xeonyung"
+  },
 ];
+
 
 const IntroMember = () => {
   
@@ -26,6 +47,28 @@ const IntroMember = () => {
               alt={member.name}
               className=" mb-2"
             />
+            
+            <div className="flex flex-col gap-2 w-full">
+            <div className="flex items-center gap-2 text-sm text-gray-700">
+                <img
+                  src="/images/mail.svg"
+                  alt="mail icon"
+               />
+               <span className="text-xs laptop:text-sm">{member.email}</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-gray-700">
+              <img src="/images/insta_icon.svg"  alt="insta icon"/>
+              <a
+                href={`https://www.instagram.com/${member.instagram}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs laptop:text-sm hover:underline"
+              >
+                {member.instagram}
+              </a>
+            </div>
+            </div>
+
           </div>
         ))}
       </GridFrame>
