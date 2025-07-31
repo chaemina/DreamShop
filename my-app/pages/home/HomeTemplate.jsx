@@ -4,6 +4,9 @@ import React, { useRef } from "react";
 import HomeLogoSection from "../../entities/LogoSection/HomeLogoSection";
 import ScrollToListButton from "../../features/ScrollToListButton";
 import FadeInSection from "../../widgets/FadeInSection/FadeInSection";
+import { gers } from "../../shared/constants/ger";
+import GerLink from "../../shared/ui/GerLink";
+
 
 const HomePage = () => {
   const listRef = useRef(null);
@@ -20,7 +23,10 @@ const HomePage = () => {
          </div>
         <div ref={listRef}>
             <FadeInSection>
-            <div className="text-lg font-semibold">✨ 게르 리스트 출력 ✨</div>
+            <div className="grid grid-cols-2 laptop:grid-cols-4 gap-6 "> 
+               {gers.map((ger, index) =>
+                 <GerLink key={ger.id} {...ger} />)}
+            </div>
         </FadeInSection>
          </div>
     </div>
