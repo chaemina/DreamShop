@@ -18,7 +18,7 @@ const FadeInSection = ({ children }) => {
       ref={ref}
       className={`transition-all duration-700 ease-out transform ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      } flex flex-col justify-center items-center min-h-[50vh]`}
+      } flex flex-col justify-center items-center`}
     >
       {children}
     </div>
