@@ -17,7 +17,7 @@ export const gers = [
   { id: 16, name: "현우", link: "https://mgerelt.vercel.app/", image: "/images/Ger2.png" },
   { id: 17, name: "민재", link: "https://kimminje.vercel.app/", image: "/images/Ger1.png"},
   { id: 18, name: "태훈", link: "https://tenuuntenger.vercel.app/", image: "/images/Ger2.png" },
-  { id: 19, name: "동찬", link: "https://temuujin-kappa.vercel.app/", image: "/images/Ger1.png" },
+  { id: 19, name: "동하", link: "https://temuujin-kappa.vercel.app/", image: "/images/Ger1.png" },
   { id: 20, name: "하늘", link: "https://uuganbadrakh.vercel.app/", image: "/images/Ger2.png" },
   { id: 21, name: "미소", link: "https://misheel-livid.vercel.app/", image: "/images/Ger1.png"},
   { id: 22, name: "진아", link: "https://amina-delta.vercel.app/", image: "/images/Ger2.png" },
