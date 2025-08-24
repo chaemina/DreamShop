@@ -14,7 +14,7 @@ const SNS = [
          <img
               src="/images/sns.svg"
               alt="sns"
-              className="w-[20%] laptop:w-[10rem] mb-2"
+              className="desktop:w-[10rem] mb-2"
             />
       <GridFrame columns={{ mobile: 2, laptop: 2, desktop: 2 }}>
         {SNS.map((item, index) => (
@@ -26,7 +26,7 @@ const SNS = [
             <img
               src={item.image}
               alt={item.name}
-              className="w-[5rem] desktop:w-[10rem]  mb-2"
+              className="w-[6rem] laptop:w-[10rem]  mb-2"
             />
             </Link>
           </div>

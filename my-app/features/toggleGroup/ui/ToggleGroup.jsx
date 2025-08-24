@@ -9,7 +9,7 @@ import Button from "../../../shared/ui/Button";
 const items = [
   { label: "Home", path: "/" },
   { label: "CoKoMong", path: "/intro" },
-  { label: "Our Album", path: "/" }, 
+  { label: "Our Album", path: "/ouralbum" }, 
 ];
 
 const ToggleGroup = () => {
