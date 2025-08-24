@@ -11,6 +11,7 @@ const IntroPage = () => {
     <div className="flex flex-col w-full justify-center items-center tablet:gap-10">
         <div className="w-full flex flex-col items-center justify-center">
           <IntroStartSection />
+         
          </div>
          
           <div ref={listRef}>
@@ -18,9 +19,10 @@ const IntroPage = () => {
                <div className="w-full h-full flex justify-center items-center">
                 <IntroMember/>
                </div>
-           <ContactPage/>
+            <ContactPage/>
         </FadeInSection>
         </div>
+
     </div>
   );
 };
